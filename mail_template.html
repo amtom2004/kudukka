@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,sans-serif;color:#333;">
+  <table width="100%%" cellpadding="0" cellspacing="0" style="background:#f4f6f9;padding:32px 0;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background:#1a1f36;padding:28px 32px;">
+            <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;">Armada Bridge</p>
+            <p style="margin:4px 0 0;font-size:13px;color:#9ba3bf;">GPU Cloud Platform</p>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px;">
+            <p style="margin:0 0 8px;font-size:18px;font-weight:bold;color:#1a1f36;">Your VM is ready</p>
+            <p style="margin:0 0 24px;font-size:14px;color:#555;">
+              <strong>%s</strong> has been provisioned and is now running.
+              You can connect via SSH using the IP address below.
+            </p>
+
+            <!-- Connection box -->
+            <table width="100%%" cellpadding="0" cellspacing="0" style="background:#f0f4ff;border-radius:6px;margin-bottom:24px;">
+              <tr>
+                <td style="padding:16px 20px;">
+                  <p style="margin:0 0 4px;font-size:11px;font-weight:bold;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;">SSH Connection</p>
+                  <p style="margin:0;font-size:15px;font-family:monospace;color:#1a1f36;">ssh ubuntu@%s</p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- VM specs table -->
+            <p style="margin:0 0 12px;font-size:13px;font-weight:bold;color:#1a1f36;text-transform:uppercase;letter-spacing:.5px;">VM Details</p>
+            <table width="100%%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:6px;border-collapse:collapse;margin-bottom:24px;">
+              %s
+            </table>
+
+            <p style="margin:0;font-size:13px;color:#6b7280;">
+              If you have any issues connecting, please allow a few minutes for the VM to complete its startup sequence.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f9fafb;padding:16px 32px;border-top:1px solid #e5e7eb;">
+            <p style="margin:0;font-size:12px;color:#9ca3af;">© Armada Systems · Bridge GPU Cloud</p>
+          </td>
+        </tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
